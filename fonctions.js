@@ -50,20 +50,36 @@ function plop() {
 plop();
 
 //exo7
-var age = ['mineur', 'majeur'];
-var genre = ['homme', 'femme'];
-
-function reloue() {
-    let chiante = age + genre;
-    if (age = 'mineur', genre = 'homme') {
-        result = 'Vous êtes un homme et vous êtes mineur';
-    } else if (age = 'homme', genre = 'majeur') {
-        result = 'Vous êtes un homme et vous êtes majeur';
-    } else if (age = 'mineur', genre = 'femme') {
-        result = 'Vous êtes une femme et vous êtes mineur';
-    } else if (age = 'majeur', genre = 'femme') {
-        result = 'Vous êtes une femme et vous êtes majeur';
+function Id(age, genre){
+    if ( genre == "Homme" ){
+        if ( age> 18 ) {
+            console.log("Vous etes un Homme et majeur")
+        }
+        else { console.log("Vous etes un Homme et mineur")}
     }
-    return result;
+    else if ( genre == "Femme") {
+        if ( age>18 ){
+            console.log("Vous etes une Femme Majeur")
+        }
+        else { console.log("Vous etes une Femme mineure")} 
+    }
+    else { 
+        if ( age>18) {
+            console.log("Vous etes ni homme ni une femme et majeur")
+        }
+        else {console.log("Vous etes ni homme ni une femme et mineur")}
+    }
+
 }
-console.log(femme, majeur);
+Id(2, 'homme');
+
+//exo8
+
+var a = 2;
+var b = 4;
+var c = 6;
+function add() {
+    let addition = a + b + c;
+    console.log(addition);
+}
+add();

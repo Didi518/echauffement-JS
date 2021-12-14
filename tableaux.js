@@ -13,7 +13,7 @@ console.log(annee[4]);
 //exo4
 let annee = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'aout', 'septembre', 'octobre', 'novembre', 'décembre'];
 annee.splice(7, 1, 'août');
-console.log(annee);
+console.log(annee[7]);
 
 //exo5
 var arr = { 02: 'Aisne', 59: 'Nord', 60: 'Oise', 62: 'Pas-de-Calais', 80: 'Somme' };
@@ -30,6 +30,7 @@ console.log(arr);
 
 //exo8
 let annee = ['janvier', 'février', 'mars', 'avril', 'mai', 'juin', 'juillet', 'aout', 'septembre', 'octobre', 'novembre', 'décembre'];
+var length = annee.length;
 for (let i = 0; i < annee.length; i++) {
     console.log(annee[i]);
 }
